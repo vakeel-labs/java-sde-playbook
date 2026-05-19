@@ -9,7 +9,14 @@
       "Bash(javac MaximumProfit.java)",
       "Bash(java MaximumProfit)",
       "Bash(Get-ChildItem \"D:\\\\OLD_LAPTOP\\\\java-sde-playbook\\\\algorithms\" -Directory)",
-      "Bash(Select-Object Name)"
+      "Bash(Select-Object Name)",
+      "PowerShell(New-Item *)",
+      "PowerShell(cmd /c \"dir /a /s D:\\\\OLD_LAPTOP\\\\java-projects\\\\java-sde-playbook\\\\module-info.java\")",
+      "PowerShell(Remove-Item *)",
+      "PowerShell(cmd /c \"dir D:\\\\OLD_LAPTOP\\\\java-projects\\\\java-sde-playbook\\\\src\\\\main\\\\java\\\\\")",
+      "PowerShell(cmd /c \"dir D:\\\\OLD_LAPTOP\\\\java-projects\\\\java-sde-playbook\\\\src\\\\main\\\\java\\\\algorithms\\\\\")",
+      "PowerShell(cmd /c \"dir D:\\\\OLD_LAPTOP\\\\java-projects\\\\java-sde-playbook\\\\src\\\\main\\\\java\\\\algorithms\\\\09greedy\\\\\")",
+      "PowerShell(cmd /c \"tree D:\\\\OLD_LAPTOP\\\\java-projects\\\\java-sde-playbook\\\\src\\\\main\\\\java /F /A\" 2>$null | Select-Object -First 80)"
     ]
   }
 }
