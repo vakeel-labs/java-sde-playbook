@@ -3,7 +3,13 @@
     "allow": [
       "Bash(git init *)",
       "Bash(git add *)",
-      "PowerShell(Rename-Item *)"
+      "PowerShell(Rename-Item *)",
+      "Bash(javac algorithms/09-greedy/MaximumProfit.java)",
+      "Bash(java algorithms.greedy.MaximumProfit)",
+      "Bash(javac MaximumProfit.java)",
+      "Bash(java MaximumProfit)",
+      "Bash(Get-ChildItem \"D:\\\\OLD_LAPTOP\\\\java-sde-playbook\\\\algorithms\" -Directory)",
+      "Bash(Select-Object Name)"
     ]
   }
 }
