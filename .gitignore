@@ -1,0 +1,62 @@
+# Compiled class files
+*.class
+
+# JAR/WAR/EAR/ZIP archives
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Build output directories
+out/
+target/
+build/
+bin/
+
+# Maven
+.mvn/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# IDE — IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# IDE — Eclipse
+.classpath
+.project
+.settings/
+.factorypath
+
+# IDE — VS Code
+.vscode/
+
+# IDE — NetBeans
+nbproject/
+nbbuild/
+nbdist/
+nb-configuration.xml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*
