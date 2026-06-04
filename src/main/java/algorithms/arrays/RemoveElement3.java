@@ -9,20 +9,18 @@ public class RemoveElement3 {
         System.out.println(i);
     }
 
-    public static int removeElement(int[] a) {
+    public static int removeDuplicates(int[] nums) {
+        int k = 0; // Writer pointer — how many valid elements written
 
-        if (a.length == 0) return 0;
-
-        int k = 1;
-
-        for (int i = 1; i < a.length; i++) {
-
-            if (a[i] != a[k - 1]) {
-                a[k] = a[i];
-                k++;
+        for (int i = 0; i < nums.length; i++) {  // Reader pointer
+            // Write if: fewer than 2 written OR current != what was written 2 steps ago
+            if (k < 2 || nums[i] != nums[k - 2]) {
+                nums[k] = nums[i];  // Writer writes
+                k++;                 // Writer moves forward
             }
+            // else: skip (Reader moves forward, Writer stays)
         }
-        return k;
 
+        return k; // Length of valid portion
     }
 }
