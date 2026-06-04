@@ -10,17 +10,14 @@ public class RemoveElement3 {
     }
 
     public static int removeDuplicates(int[] nums) {
-        int k = 0; // Writer pointer — how many valid elements written
-
-        for (int i = 0; i < nums.length; i++) {  // Reader pointer
-            // Write if: fewer than 2 written OR current != what was written 2 steps ago
-            if (k < 2 || nums[i] != nums[k - 2]) {
-                nums[k] = nums[i];  // Writer writes
-                k++;                 // Writer moves forward
+        if (nums.length == 0) return 0;
+        int k = 2;
+        for (int i = 2; i < nums.length; i++) {
+            if (nums[i] != nums[k - 2]) {
+                nums[k] = nums[i];
+                k++;
             }
-            // else: skip (Reader moves forward, Writer stays)
         }
-
-        return k; // Length of valid portion
+        return k;
     }
 }
